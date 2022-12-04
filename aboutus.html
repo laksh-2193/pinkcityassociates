@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" lang="zxx">
+
+<!-- Mirrored from www.goldencredence.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Dec 2022 10:11:37 GMT -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Pink City Associates - Portfolio Management Services
+    </title>
+    <!--== Favicon ==-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!--== Google Fonts ==-->
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700" rel="stylesheet" />
+    <!-- build:css css/app.min.css -->
+    <!--== Lightslider Min CSS ==-->
+    <link href="css/lightslider.min30f4.css?v=3" rel="stylesheet" />
+    <!--== Magnific Popup Min CSS ==-->
+    <link href="css/magnific-popup.min30f4.css?v=3" rel="stylesheet" />
+    <!--== Font-Awesome Min CSS ==-->
+    <link href="css/font-awesome.min30f4.css?v=3" rel="stylesheet" />
+    <!--== Bootstrap Min CSS ==-->
+    <link href="css/bootstrap.min30f4.css?v=3" rel="stylesheet" />
+    <!--== Main Style CSS ==-->
+    <link href="css/style.min30f4.css?v=3" rel="stylesheet" />
+    <link href="css/pe-icon-7-stroke.min.css" rel="stylesheet" type="text/css" />
+    <!-- endbuild -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Google Tag Manager -->
+    <script>        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K4C8H3S');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Subscribe validation-->
+    <script>
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : evt.keyCode
+            if (charCode > 31 & (charCode < 48 || charCode > 57))
+                return false;
+
+            return true;
+        }
+    </script>
+    <script type="text/javascript" language="javascript">
+        function validateSubscribe() {
+            var Name, Email, Mobile, MobileExp, emailExp;
+            Name = document.getElementById('ctl00_txtSubName').value;
+            Mobile = document.getElementById('ctl00_txtSubMobile').value;
+            Email = document.getElementById('ctl00_txtSubEmail').value;
+
+
+            MobileExp = /^\d{10,15}$/;
+            emailExp = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([com\co\.\in])+$/;
+
+            if (Name == '' && Mobile == '' && Email == '') {
+                document.getElementById('ctl00_txtSubName').classList.add('ValidationError');
+                document.getElementById('ctl00_txtSubMobile').classList.add('ValidationError');
+                document.getElementById('ctl00_txtSubEmail').classList.add('ValidationError');
+                return false;
+            }
+
+            if (Name == '') {
+                document.getElementById('ctl00_txtSubName').classList.remove('ValidationSuccess');
+                document.getElementById('ctl00_txtSubName').classList.add('ValidationError');
+                return false;
+            }
+            else {
+                document.getElementById('ctl00_txtSubName').classList.remove('ValidationError');
+                document.getElementById('ctl00_txtSubName').classList.add('ValidationSuccess');
+            }
+
+            if (Mobile != '') {
+                if (Mobile.match(Num)) {
+                    if (!Mobile.match(MobileExp)) {
+                        document.getElementById('ctl00_txtSubMobile').classList.remove('ValidationSuccess');
+                        document.getElementById('ctl00_txtSubMobile').classList.add('ValidationError');
+                        return false;
+                    }
+                    else {
+                        document.getElementById('ctl00_txtSubMobile').classList.remove('ValidationError');
+                        document.getElementById('ctl00_txtSubMobile').classList.add('ValidationSuccess');
+                    }
+                }
+            }
+            else {
+                document.getElementById('ctl00_txtSubMobile').classList.remove('ValidationSuccess');
+                document.getElementById('ctl00_txtSubMobile').classList.add('ValidationError');
+                return false;
+            }
+
+            if (Email != '') {
+                if (!Email.match(emailExp)) {
+                    document.getElementById('ctl00_txtSubEmail').classList.remove('ValidationSuccess');
+                    document.getElementById('ctl00_txtSubEmail').classList.add('ValidationError');
+                    return false;
+                    return false;
+                }
+                else {
+                    document.getElementById('ctl00_txtSubEmail').classList.remove('ValidationError');
+                    document.getElementById('ctl00_txtSubEmail').classList.add('ValidationSuccess');
+                }
+            }
+            else {
+                document.getElementById('ctl00_txtSubEmail').classList.remove('ValidationSuccess');
+                document.getElementById('ctl00_txtSubEmail').classList.add('ValidationError');
+                return false;
+            }
+
+
+            return true;
+        }
+    </script>
+    <style type="text/css">
+        .ValidationError {
+            border-bottom: 2px solid red !important;
+        }
+
+        .ValidationSuccess {
+            border-bottom: 2px solid green !important;
+        }
+    </style>
+
+    <script>
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : evt.keyCode
+            if (charCode > 31 & (charCode < 48 || charCode > 57))
+                return false;
+
+            return true;
+        }
+    </script>
+    <script type="text/javascript" language="javascript">
+        function validateSignUp() {
+            var Name, Email, Mobile, MobileExp, emailExp;
+            Name = document.getElementById('ctl00_ContentPlaceHolder1_txtName').value;
+            Mobile = document.getElementById('ctl00_ContentPlaceHolder1_txtMobile').value;
+            Email = document.getElementById('ctl00_ContentPlaceHolder1_txtEmail').value;
+
+            MobileExp = /^\d{10,15}$/;
+            emailExp = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([com\co\.\in])+$/;
+
+            if (Name == '' && Mobile == '' && Email == '') {
+                document.getElementById('ctl00_ContentPlaceHolder1_txtName').classList.add('ValidationError');
+                document.getElementById('ctl00_ContentPlaceHolder1_txtMobile').classList.add('ValidationError');
+                document.getElementById('ctl00_ContentPlaceHolder1_txtEmail').classList.add('ValidationError');
+                return false;
+            }
+
+            if (Name == '') {
+                document.getElementById('ctl00_ContentPlaceHolder1_txtName').classList.remove('ValidationSuccess');
+                document.getElementById('ctl00_ContentPlaceHolder1_txtName').classList.add('ValidationError');
+                return false;
+            }
+            else {
+                document.getElementById('ctl00_ContentPlaceHolder1_txtName').classList.remove('ValidationError');
+                document.getElementById('ctl00_ContentPlaceHolder1_txtName').classList.add('ValidationSuccess');
+            }
+
+            if (Mobile != '') {
+                if (Mobile.match(Num)) {
+                    if (!Mobile.match(MobileExp)) {
+                        document.getElementById('ctl00_ContentPlaceHolder1_txtMobile').classList.remove('ValidationSuccess');
+                        document.getElementById('ctl00_ContentPlaceHolder1_txtMobile').classList.add('ValidationError');
+                        return false;
+                    }
+                    else {
+                        document.getElementById('ctl00_ContentPlaceHolder1_txtMobile').classList.remove('ValidationError');
+                        document.getElementById('ctl00_ContentPlaceHolder1_txtMobile').classList.add('ValidationSuccess');
+                    }
+                }
+            }
+            else {
+                document.getElementById('ctl00_ContentPlaceHolder1_txtMobile').classList.remove('ValidationSuccess');
+                document.getElementById('ctl00_ContentPlaceHolder1_txtMobile').classList.add('ValidationError');
+                return false;
+            }
+
+            if (Email != '') {
+                if (!Email.match(emailExp)) {
+                    document.getElementById('ctl00_ContentPlaceHolder1_txtEmail').classList.remove('ValidationSuccess');
+                    document.getElementById('ctl00_ContentPlaceHolder1_txtEmail').classList.add('ValidationError');
+                    return false;
+                    return false;
+                }
+                else {
+                    document.getElementById('ctl00_ContentPlaceHolder1_txtEmail').classList.remove('ValidationError');
+                    document.getElementById('ctl00_ContentPlaceHolder1_txtEmail').classList.add('ValidationSuccess');
+                }
+            }
+            else {
+                document.getElementById('ctl00_ContentPlaceHolder1_txtEmail').classList.remove('ValidationSuccess');
+                document.getElementById('ctl00_ContentPlaceHolder1_txtEmail').classList.add('ValidationError');
+                return false;
+            }
+
+
+            return true;
+        }
+    </script>
+    <style type="text/css">
+        .ValidationError {
+            border-bottom: 2px solid red !important;
+        }
+
+        .ValidationSuccess {
+            border-bottom: 2px solid green !important;
+        }
+
+        @media only screen and (max-width: 767.98px) {
+            .page-header-content {
+                height: auto;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            document.getElementById('Home').className = 'has-submenu active';
+        });
+    </script>
+</head>
+
+<body class="preloader-active">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4C8H3S" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <form name="aspnetForm" method="post" action="https://www.goldencredence.com/" id="aspnetForm">
+        <div>
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="/wEPDwUKLTMxMDg0MzQxMmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFI2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkQ2hlY2tCb3gxSY6qcbDpHdB+4ZmcdDTYIORb+WN6eSBvlUF/Q4xGDng=" />
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var theForm = document.forms['aspnetForm'];
+            if (!theForm) {
+                theForm = document.aspnetForm;
+            }
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+//]]>
+        </script>
+
+
+        <script
+            src="WebResource273d.axd?d=_A_qXSXorWs9ODs7quXbny4QxqppWJ-A05aYD3O0pWRyVfC5UZMrilmO66dGe3T0NQuDVNOUqfw-YY0A0Anx4htGnY9hE1KWkAHnF5CS2iM1&amp;t=637353176110221559"
+            type="text/javascript"></script>
+
+        <div>
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+            <input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+            <input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                value="/wEdAAppuGPbEFt8H/cAEK1dMIrbVes4AfNrEwZQ25wFmngHn1f1tIAwDpA/p3iQAE0sdDuXd2w03C9og5wz07zmmZ2vuuFqLX5CJnokzMX3pdCefrhnrsA5T+TOHMtXpfc/2oNoyDslmHwOm4dhVRgHu9BdwsMM0/k0gkulhdm2yB3P90+jwZtfyM69OPz03n/K/HGmfgCpmTKioG/0K4m9V3jPsNUuar9Z0u4YqjwKJ2zBKeCOrQ9dMW32Drl1dNUL0XY=" />
+        </div>
+
+        <!--== Start Header Wrapper ==-->
+        <header class="header-area  transparent sticky-header">
+            <div class="container-fluid">
+                <div class="row no-gutters align-items-center">
+                    <div class="col-5 col-lg-2">
+                        <div class="header-logo-area">
+                            <a href="index.html">
+                                <img class="logo-main" src="images/girik-logo.png" alt="Logo" />
+                                <img class="logo-light" src="images/girik-logo-light.png" alt="Logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 d-none d-lg-block">
+                        <div class="header-navigation-area">
+                            <ul class="main-menu nav justify-content-center">
+                                <li class="has-submenu" id="About"><a
+                                        href="aboutus.html">About</a></li>
+                                <li class="has-submenu" id="Investment"><a
+                                        href="investmentphilosophy.html">Investment
+                                        Philosophy</a></li>
+
+                                <li class="has-submenu navborbn"><a
+                                        href=".footer-area"
+                                        class="btn-bordered btn-xs">
+                                        Invest With Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-7 col-lg-2">
+                        <div class="header-action-area text-right">
+                            <button class="btn-menu d-lg-none">
+                                <span></span><span></span><span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="site-wrapper site-wrapper-reveal">
+
+        <div class="page-header-wrapper bg-img" data-bg="https://girikcap.com/images/about-banner1.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="page-header-content">
+                            <div class="section-title mb-0">
+                                <h2>
+                                    About Us</h2>
+                            </div>
+                            <nav class="breadcrumb-wrap">
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-page-feature-area">
+            <div class="about-page-feature-content sp-y">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-12">
+                            <div class="list-box-item mt-lg-0">
+                                <div class="list-box__info center">
+                                    <h4>
+                                        PinkCity Associates</h4>
+                                    <p>
+                                        Founded in 2020, PinkCity Associates is a Jaipur based firm providing asset management services. Our focus is Indian
+                                        listed equities and real estate. We cater to corporates, institutions, family offices, and individuals from India and
+                                        globally. The investment management team at PinkCity Associates brings more than 20 years of cumulative experience in
+                                        investment management.</p>
+                                    <p>
+                                        At PinkCity, we believe investing does not have to be complicated and we keep it that
+                                        way. We screen investment opportunities based on strict parameters of:
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-box-area sp-y bg-softWhite">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <div class="icon-box-item">
+                                <div class="icon-box__icon">
+                                    <i class="pe-7s-display1"></i>
+                                </div>
+                                <div class="icon-box__txt">
+                                    <h6>
+                                        Growth</h6>
+                                    <p>
+                                        To look for accelerating current annual & quarterly earnings.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="icon-box-item">
+                                <div class="icon-box__icon">
+                                    <i class="pe-7s-star"></i>
+                                </div>
+                                <div class="icon-box__txt">
+                                    <h6>
+                                        Quality</h6>
+                                    <p>
+                                        To identify leading stocks from the leading industries.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="icon-box-item">
+                                <div class="icon-box__icon">
+                                    <i class="pe-7s-medal"></i>
+                                </div>
+                                <div class="icon-box__txt">
+                                    <h6>
+                                        Competitive Advantage</h6>
+                                    <p>
+                                        To identify companies having product/ service leadership.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float-clear">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-page-feature-content mt-5 mb-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-12">
+                            <div class="list-box-item mt-lg-0">
+                                <div class="list-box__info center">
+                                    <h4>
+                                        Philosophy</h4>
+                                    <p>
+                                        At PinkCity, our philosophy is inspired by William O Neil's CANSLIM style of investment
+                                        management to primarily invest in leading, high quality, high growth businesses
+                                        that are run by honest and capable management teams.
+                                    </p>
+                                    <a class="btn-bordered btn-md" href="investmentphilosophy.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="../ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $("#colred1").on("hide.bs.collapse", function () {
+                        $(".btn1").html('Read More...');
+                    });
+                    $("#colred1").on("show.bs.collapse", function () {
+                        $(".btn1").html('Read Less');
+                    });
+
+
+                    $("#colred2").on("hide.bs.collapse", function () {
+                        $(".btn2").html('Read More...');
+                    });
+                    $("#colred2").on("show.bs.collapse", function () {
+                        $(".btn2").html('Read Less');
+                    });
+
+
+                    $("#colred3").on("hide.bs.collapse", function () {
+                        $(".btn3").html('Read More...');
+                    });
+                    $("#colred3").on("show.bs.collapse", function () {
+                        $(".btn3").html('Read Less');
+                    });
+
+
+                    $("#colred4").on("hide.bs.collapse", function () {
+                        $(".btn4").html('Read More...');
+                    });
+                    $("#colred4").on("show.bs.collapse", function () {
+                        $(".btn4").html('Read Less');
+                    });
+
+
+                    $("#colred5").on("hide.bs.collapse", function () {
+                        $(".btn5").html('Read More...');
+                    });
+                    $("#colred5").on("show.bs.collapse", function () {
+                        $(".btn5").html('Read Less');
+                    });
+
+
+                    $("#colred6").on("hide.bs.collapse", function () {
+                        $(".btn6").html('Read More...');
+                    });
+                    $("#colred6").on("show.bs.collapse", function () {
+                        $(".btn6").html('Read Less');
+                    });
+                });
+            </script>
+
+        </main>
+        <!--Start-Footer-Area-Wrapper-->
+        <footer class="footer-area reveal-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Start Footer Widget Area -->
+                        <div class="footer-widget-area sp-y">
+                            <div class="row mtn-35">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="widget-item">
+                                        <div class="about-widget">
+                                            <a href="https://goldencredence.com/index.html">
+                                                <img src="images/girik-logo-light.png" alt="Logo" /></a>
+                                            <p>
+                                                Founded in 2020, PinkCity Associated is a Jaipur based firm
+                                                providing asset management services. Our focus is Indian listed equities
+                                                and real estate.
+                                                <br />
+                                                <a target="_self"
+                                                    href="https://goldencredence.com/About/About-Us.html">Continue...</a>
+                                            </p>
+                                        </div>
+                                        <br />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4 offset-1 ml-auto">
+                                    <div class="widget-item">
+                                        <h4 class="widget-title">
+                                            Pink City Associates</h4>
+                                        <br />
+                                        <h4 class="widget-title">
+                                            ADDRESS</h4>
+                                        143, LIONS LANE, SIRSI ROAD, <br />
+                                        JAIPUR, RAJASTHAN - 302034<br />
+                                        <br />
+                                        <h4 class="widget-title">
+                                            PHONE NUMBER</h4>
+                                        +91-8851655761
+                                        </address>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="col-lg-12">
+                                        <div class="widget-item">
+                                            <h4 class="widget-title">
+                                                Sign up to our Research</h4>
+                                            <div class="contact-form-wrap">
+                                                <div class="contact-from-content mtn-35 mtn-sm-30">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-input-item classic">
+                                                                <input name="ctl00$txtSubName" type="text"
+                                                                    id="ctl00_txtSubName" placeholder="Full Name" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="form-input-item classic">
+                                                                <input name="ctl00$txtSubMobile" type="text"
+                                                                    id="ctl00_txtSubMobile" placeholder="Mobile" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form-input-item classic">
+                                                                <input name="ctl00$txtSubEmail" type="text"
+                                                                    id="ctl00_txtSubEmail" placeholder="Email ID" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form-input-item classic light">
+
+                                                                <a onclick="Javascript:return validateSubscribe();"
+                                                                    id="ctl00_btnSubscribe" class="btn btn-bordered"
+                                                                    href="javascript:__doPostBack(&#39;ctl00$btnSubscribe&#39;,&#39;&#39;)">Subscribe</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Start Footer Copyright Area -->
+                        <div class="footer-copyright-area">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <nav class="footer-menu-wrap">
+                                        <ul class="footer-menu nav  justify-content-md-start">
+                                            <li><a href="https://goldencredence.com/About/About-Us.html">About</a></li>
+                                            <li><a
+                                                    href="https://goldencredence.com/Investment Philosophy/Investment-Philosophy.html">Investment
+                                                    Philosophy</a></li>
+                                            <li><a href="https://goldencredence.com/ContactUs/Contact-Us.html">Contact
+                                                    Us</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-md-5 text-center text-md-right">
+                                    <div class="copyright-txt mt-sm-15">
+                                        <p>
+                                            &copy; Pink City Associates 2020.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Footer Copyright Area -->
+                    </div>
+                    <!-- End Footer Widget Area -->
+                </div>
+            </div>
+            </div>
+        </footer>
+        <!--== End Footer Area Wrapper ==-->
+        <!-- Scroll Top Button -->
+        <button class="btn-scroll-top">
+            <i class="fa fa-angle-up"></i>
+        </button>
+        <!-- Start Off Canvas Menu Wrapper -->
+        <aside class="off-canvas-wrapper">
+            <div class="off-canvas-inner">
+                <!-- Start Off Canvas Content Wrapper -->
+                <div class="off-canvas-content">
+                    <!-- Off Canvas Header -->
+                    <div class="off-canvas-header">
+                        <div class="logo-area">
+                            <a href="https://goldencredence.com/index.html">
+                                <img src="images/girik-logo.png" alt="Logo" /></a>
+                        </div>
+                        <div class="close-action">
+                            <button class="btn-close">
+                                <i class="pe-7s-close"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="off-canvas-item">
+                        <!-- Start Mobile Menu Wrapper -->
+                        <div class="res-mobile-menu">
+                            <!-- Note Content Auto Generate By Jquery From Main Menu -->
+                        </div>
+                        <!-- End Mobile Menu Wrapper -->
+                    </div>
+                </div>
+                <!-- End Off Canvas Content Wrapper -->
+            </div>
+        </aside>
+        <!-- End Off Canvas Menu Wrapper -->
+        <!-- Start Search Box Area Wrapper -->
+        <div class="search-box-wrapper">
+            <div class="search-box-content-inner">
+                <div class="search-box-form-wrap">
+                    <form action="#" method="post">
+                        <div class="search-form position-relative">
+                            <label for="search-input" class="sr-only">
+                                Search</label>
+                            <input type="search" id="search-input" required />
+                            <input type="submit" value="search" class="sr-only" />
+                        </div>
+                    </form>
+                    <div class="search-note">
+                        <p>
+                            Hit enter to search or ESC to close</p>
+                    </div>
+                </div>
+            </div>
+            <button class="search-close">
+                <i class="pe-7s-close"></i>
+            </button>
+        </div>
+        <!-- End Search Box Area Wrapper -->
+
+
+        <script type="text/javascript">
+            //<![CDATA[
+
+            theForm.oldSubmit = theForm.submit;
+            theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+            theForm.oldOnSubmit = theForm.onsubmit;
+            theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+        </script>
+    </form>
+    <!--Javascript-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.justifiedGallery.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.matchHeight-min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.sticky-sidebar.min.js"></script>
+    <script src="js/lightslider.min.js"></script>
+    <script src="js/tippy.all.min.js"></script>
+    <script src="js/active.js"></script>
+</body>
+
+<!-- Mirrored from www.goldencredence.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Dec 2022 10:11:45 GMT -->
+
+</html>
